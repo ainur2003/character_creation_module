@@ -84,9 +84,9 @@ def choice_char_class() -> str:
         if char_class == 'healer':
             print('Лекарь — могущественный заклинатель. ', end='')
             print('Черпает силы из природы, веры и духов.')
-            print('Нажми (Y), чтобы подтвердить выбор, или любую ', end='')
-            print('другую кнопку, чтобы выбрать другого персонажа ', end='')
-            approve_choice = input().lower()
+        print('Нажми (Y), чтобы подтвердить выбор, или любую ', end='')
+        print('другую кнопку, чтобы выбрать другого персонажа ', end='')
+        approve_choice = input().lower()
     return char_class
 
 
@@ -101,3 +101,5 @@ def main() -> str:
     print('Воитель, Маг, Лекарь')
     char_class = choice_char_class()
     print(start_training(char_name, char_class))
+
+main()
